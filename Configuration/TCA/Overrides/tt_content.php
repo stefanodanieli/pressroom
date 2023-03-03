@@ -7,7 +7,7 @@ defined('TYPO3_MODE') or die();
 
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-    'Polimi.Pressroom',
+    'Polimiacre.Pressroom',
     'Pi1',
     'Pressroom'
 );

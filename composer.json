@@ -1,5 +1,5 @@
 {
-    "name": "polimi/pressroom",
+    "name": "polimiacre/pressroom",
     "type": "typo3-cms-extension",
     "description": "",
     "authors": [],
@@ -12,12 +12,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Polimi\\Pressroom\\": "Classes"
+            "Polimiacre\\Pressroom\\": "Classes"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Polimi\\Pressroom\\Tests\\": "Tests"
+            "Polimiacre\\Pressroom\\Tests\\": "Tests"
         }
     },
     "replace": {

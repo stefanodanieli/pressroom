@@ -8,12 +8,12 @@ defined('TYPO3_MODE') || die();
         'Pressroom',
         'Pi1',
         [
-            \Polimi\Pressroom\Controller\PressroomController::class => 'list,listSito,listRicerca,detail,selectedList,dateMenu,searchForm,searchResult',
+            \Polimiacre\Pressroom\Controller\PressroomController::class => 'list,listSito,listRicerca,detail,selectedList,dateMenu,searchForm,searchResult',
             \GeorgRinger\News\Controller\CategoryController::class => 'list',
             \GeorgRinger\News\Controller\TagController::class => 'list',
         ],
         [
-            \Polimi\Pressroom\Controller\PressroomController::class => 'searchForm,searchResult',
+            \Polimiacre\Pressroom\Controller\PressroomController::class => 'searchForm,searchResult',
         ]
     );
 
@@ -49,7 +49,7 @@ defined('TYPO3_MODE') || die();
 //    \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Extbase\SignalSlot\Dispatcher::class)->connect(
 //        \GeorgRinger\News\Domain\Service\NewsImportService::class,
 //        'postHydrate',
-//        \Polimi\Comunicatistampa\Aspect\NewsImportAspect::class,
+//        \Polimiacre\Comunicatistampa\Aspect\NewsImportAspect::class,
 //        'postHydrate'
 //    );
 

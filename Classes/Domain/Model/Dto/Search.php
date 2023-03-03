@@ -1,6 +1,6 @@
 <?php
 
-namespace Polimi\Pressroom\Domain\Model\Dto;
+namespace Polimiacre\Pressroom\Domain\Model\Dto;
 
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 

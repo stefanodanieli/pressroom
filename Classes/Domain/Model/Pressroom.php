@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Polimi\Pressroom\Domain\Model;
+namespace Polimiacre\Pressroom\Domain\Model;
 
 
 /**

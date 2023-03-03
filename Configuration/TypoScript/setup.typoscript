@@ -53,7 +53,7 @@ plugin.tx_pressroom_pi1.settings {
 		facebookLocale = en_US
 		googlePlusLocale = en
 
-		demandClass = Polimi\Pressroom\Domain\Model\Dto\PressroomDemand
+		demandClass = Polimiacre\Pressroom\Domain\Model\Dto\PressroomDemand
 
 
 		# --------------

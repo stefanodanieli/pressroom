@@ -1,6 +1,6 @@
 <?php
 
-namespace Polimi\Pressroom\Domain\Model\Dto;
+namespace Polimiacre\Pressroom\Domain\Model\Dto;
 
 use \GeorgRinger\News\Domain\Model\Dto\NewsDemand;
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Polimi\Pressroom\Controller;
+namespace Polimiacre\Pressroom\Controller;
 
 use GeorgRinger\News\Controller\NewsController;
 use GeorgRinger\News\Domain\Model\Dto\NewsDemand;
@@ -33,14 +33,14 @@ class PressroomController extends  NewsController
     /**
      * pressroomRepository
      *
-     * @var \Polimi\Pressroom\Domain\Repository\PressroomRepository
+     * @var \Polimiacre\Pressroom\Domain\Repository\PressroomRepository
      */
     protected $pressroomRepository = null;
 
     /**
-     * @param \Polimi\Pressroom\Domain\Repository\PressroomRepository $pressroomRepository
+     * @param \Polimiacre\Pressroom\Domain\Repository\PressroomRepository $pressroomRepository
      */
-    public function injectPressroomRepository(\Polimi\Pressroom\Domain\Repository\PressroomRepository $pressroomRepository)
+    public function injectPressroomRepository(\Polimiacre\Pressroom\Domain\Repository\PressroomRepository $pressroomRepository)
     {
         $this->pressroomRepository = $pressroomRepository;
     }
