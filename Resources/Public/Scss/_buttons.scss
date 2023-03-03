@@ -1,0 +1,14 @@
+.tx-comunicatistampa{
+    .button{
+      display:inline-block;
+      background-color: $primary;
+      color:$light;
+      padding: map-get($margin,"xsmall") map-get($margin,"medium");
+      text-decoration: none;
+      border:map-get($border-width,"medium") solid $primary;
+      &:hover{
+        background-color: transparent;
+        color: $primary;
+      }
+    }
+}

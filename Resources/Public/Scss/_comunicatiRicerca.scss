@@ -1,0 +1,78 @@
+/*COMUNICATI STAMPA RICERCA*/
+.tx-comunicatistampa{
+  list-style-type: none;
+  padding:map-get($margin,"small");
+  .previewricerca {
+    display: flex;
+    flex-wrap: nowrap;
+    gap:map-get($margin,"xsmall");
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    @media (min-width:480px){
+      flex-wrap: wrap;
+    }
+    .item{
+        border-bottom: none;
+        margin:map-get($margin,"small");
+        min-height:180px;
+        width:100%;
+      @media (min-width:480px){
+      width:50%;
+        &:first-child{
+          flex-grow: 2;
+          width:100%;
+        }
+      }
+      @media (min-width:768px) {
+            width:30%;
+            &:last-child{
+              flex-grow:2;
+            }
+            &:nth-last-child(-n+2){
+              flex-grow:2;
+            }
+      }
+
+      a{
+        position:relative;
+        background-color: $lightgray;
+        padding:map-get($margin,"small");
+        color:$dark;
+        height: 100%;
+        text-decoration: none;
+        display: block;
+      span{
+        display:block;
+        text-align: left;
+        font-weight: 400;
+      }
+      &:before{
+        content:"";
+      }
+      &:hover{
+        background-color:$lightblue;
+        color: $light;
+        .titolo,.header{
+          color:$light;
+        }
+      }
+    }
+      h1,h2,h3,h4,h5,h6, .csc-header{
+        text-align: left;
+        font-weight: bold;
+      }
+      .titolo, .sottotitolo{
+        padding-bottom:map-get($margin,"medium");
+        padding-left:0;
+        font-weight:600;
+        font-size:map-get($heading,"h5");
+      }
+      .inseritoil{
+        position:absolute;
+        bottom:map-get($margin,"xsmall");
+      }
+  }
+
+  }
+}

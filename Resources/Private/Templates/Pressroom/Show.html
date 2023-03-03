@@ -1,0 +1,68 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="General" />
+
+This template is responsible for displaying a single view for a domain object
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+Resources:
+Private:
+Templates:
+Bandita:
+Show.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="content">
+    <f:flashMessages />
+    <div class="show">
+        <h1>{comunicatistampa.title}</h1>
+        <f:if condition="{comunicatistampa.bodytext}">
+            <p>{comunicatistampa.bodytext -> f:format.html(parseFuncTSPath: 'lib.parseFunc_my_teaser')}</p>
+        </f:if>
+
+
+        <f:if condition="{comunicatistampa.falMedia}">
+            <h2><f:translate key="tx_comunicatistampa_domain_model_comunicatistampa.label.attachments" /></h2>
+            <ul class="attachments">
+            <f:for each="{comunicatistampa.falMedia}" as="pic">
+                <f:if condition="{pic.originalResource.title}">
+                    <f:then>
+                        <li class="attachement"><a href="{pic.originalResource.publicUrl}" class="link">{pic.originalResource.title}</a>
+                    </f:then>
+                    <f:else>
+                        <li class="attachement"><a href="{pic.originalResource.publicUrl}" class="link">{pic.originalResource.name}</a>
+                    </f:else>
+                </f:if>
+                <f:comment>
+                    <f:if condition="{pic.originalResource.description}">
+                        <f:then>
+                            <span class="attachementDescription">{pic.originalResource.description}</span>
+                        </f:then>
+                    </f:if>
+                </f:comment>
+                </li>
+                <f:comment>
+                    by S.D : li lascio per eventuali usi futuri
+                    {pic.originalResource.title}
+                    {pic.originalResource.description}
+                </f:comment>
+            </f:for>
+            </ul>
+        </f:if>
+        <div class="info">
+            <h2><f:translate key="tx_comunicatistampa_domain_model_comunicatistampa.label.information" /></h2>
+            <p>
+                <f:translate key="tx_comunicatistampa_domain_model_comunicatistampa.information.office" /><br>
+                <f:link.email email="{f:translate(key: 'tx_comunicatistampa_domain_model_comunicatistampa.information.mail')}" /><br>
+                <f:link.external uri="{f:translate(key: 'tx_comunicatistampa_domain_model_comunicatistampa.information.site')}"><f:translate key="tx_comunicatistampa_domain_model_comunicatistampa.information.site" /></f:link.external>
+            </p>
+        </div>
+        <p>
+            <f:translate key="tx_comunicatistampa_domain_model_comunicatistampa.inseritoil" /> {comunicatistampa.datetime ->f:format.date()}
+        </p>
+        <f:link.action action="list" class="button"><f:translate key="tx_comunicatistampa_domain_model_comunicatistampa.label.backlink.currentyear" /></f:link.action>
+    </div>
+</f:section>
+</html>
+

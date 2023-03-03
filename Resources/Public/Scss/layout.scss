@@ -1,0 +1,71 @@
+// Variables
+@import "variables";
+
+//Mixins
+@import "mixins";
+
+// Buttons
+@import "buttons";
+
+// Lista Preview Ricerca
+@import "comunicatiRicerca";
+
+// Details view
+@import "show";
+
+// write or import
+
+.bold{
+  font-weight: bold;
+}
+.nowrap{
+  white-space: nowrap;
+}
+
+.block{
+  display: block;
+  margin:map-get($margin,"medium") 0;
+}
+.attachementDescription{
+  display:block;
+  font-size: 1rem;
+}
+
+.backlist{
+  display: block;
+  margin:map-get($margin,"medium") 0;
+}
+
+
+  // widget paginator
+  .new-widget-paginator {
+    display: flex;
+    padding: 0;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+    li{
+      display: inline-block;
+      border: map-get($border-width,"small") solid $primary;
+      margin-right: .5rem;
+      min-width: 44px;
+      text-align: center;
+      &.current{
+        font-weight: bold;
+        color: $light;
+        min-width: 44px;
+        padding: 0.5rem;
+        background-color: $primary;
+      }
+      a{
+        text-decoration: none;
+        display: inline-block;
+        min-width: 44px;
+        text-align: center;
+        padding: 0.5rem;
+        &:hover{
+          background-color: $secondary;
+          color:$light;
+        }
+      }
+    }
+  }

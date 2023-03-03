@@ -1,0 +1,66 @@
+// Variables
+
+//Colors
+
+$primary:         #547ab0;
+$secondary:       #0f2c53;
+$lightblue:       $primary;
+$darkblue:      $secondary;
+$light:               #fff;
+$dark:                #000;
+$lightgray:        #e9e9e9;
+$gray:             #b8b8b8;
+$mediumgray:       #758c9b;
+$darkgray:         #4f5c64;
+
+// Breakpoints
+$grid-breakpoints: (
+        xs: 0,
+        sm: 568px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1300px
+);
+
+$grid-float-breakpoint: 992px;
+
+
+// Border
+$border-width: (
+        "small": 1px,
+        "medium": 2px,
+        "maxi": 4px
+);
+
+$border-radius: (
+        "small": 1px,
+        "medium": 2px,
+        "maxi": 4px
+);
+
+// Margin
+
+$margin: (
+        "xsmall":.625rem,
+        "small": 1rem,
+        "medium": 2rem,
+        "maxi": 4rem
+);
+
+// headings
+$heading:(
+        "h1":2.5rem,
+        "h2":1.8rem,
+        "h3":1.3rem,
+        "h4":1.2rem,
+        "h5":1.1rem
+);
+
+// icon size
+$iconSize: (
+        "small": 25px,
+        "medium": 48px,
+        "maxi": 96px
+);
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:pressroom/Resources/Private/Language/locallang.xlf" date="2023-03-01T13:56:29Z" product-name="pressroom">
+		<header/>
+		<body>
+			<trans-unit id="tx_pressroom_domain_model_pressroom" resname="tx_pressroom_domain_model_pressroom">
+				<source>Pressroom</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

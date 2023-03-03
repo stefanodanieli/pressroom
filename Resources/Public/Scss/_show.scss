@@ -1,0 +1,16 @@
+.show{
+  h2{
+    font-size: map-get($heading,"h2")!important;
+    margin-bottom: map-get($margin,"xsmall")!important;
+  }
+  .attachments {
+    .attachement {
+      ::marker {
+        display: none!important;
+      }
+    }
+  }
+  .info{
+    margin-top: map-get($margin,"maxi");
+  }
+}
