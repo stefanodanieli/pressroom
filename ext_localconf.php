@@ -8,12 +8,12 @@ defined('TYPO3_MODE') || die();
         'Pressroom',
         'Pi1',
         [
-            \Polimiacre\Pressroom\Controller\PressroomController::class => 'list,listSito,listRicerca,detail,selectedList,dateMenu,searchForm,searchResult',
+            \Polimiacre\Pressroom\Controller\PressroomController::class => 'list,listSito,listRicerca, detail ,selectedList,dateMenu,searchForm,searchResult',
             \GeorgRinger\News\Controller\CategoryController::class => 'list',
             \GeorgRinger\News\Controller\TagController::class => 'list',
         ],
         [
-            \Polimiacre\Pressroom\Controller\PressroomController::class => 'searchForm,searchResult',
+            \Polimiacre\Pressroom\Controller\PressroomController::class => 'searchForm,searchResult, detail',
         ]
     );
 
